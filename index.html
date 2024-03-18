@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Music Player</title>
+  </head>
+
+  <body>
+    <div class="musicPlayer">
+      <audio src="./assets/music/lifelike.mp3"></audio>
+      <div class="infos">
+        <div class="songPicture">
+          <img src="./assets/img/balloon.jpg" alt="Image du titre" />
+        </div>
+
+        <div class="songInfos">
+          <p id="song_title">Titre de la chanson</p>
+          <p id="artist_name">Nom de l'artiste</p>
+        </div>
+      </div>
+
+      <div class="controlSection">
+        <div class="controls">
+          <span class="material-symbols-outlined" id="skipB-btn"
+            >skip_previous</span
+          >
+          <span class="material-symbols-outlined" id="play-btn"
+            >play_circle</span
+          >
+          <span class="material-symbols-outlined" id="pause-btn"> pause </span>
+          <span class="material-symbols-outlined" id="skipF-btn"
+            >skip_next</span
+          >
+        </div>
+
+        <div class="duration">
+          <div id="current-time">0:00</div>
+            <input type="range" id="track" min="0" value="0" />
+          <div id="track-time">3:15</div>
+        </div>
+      </div>
+
+      <div class="volume">
+        <div>
+          <span class="material-symbols-outlined" id="volume_icon">volume_up</span>
+          <span class="material-symbols-outlined" id="volume_off">volume_off</span>
+          <input
+            type="range"
+            id="volume"
+            min="0"
+            max="1"
+            value="1"
+            step="0.1"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/main.js" type="text/javascript"></script>
+  </body>
+</html>
