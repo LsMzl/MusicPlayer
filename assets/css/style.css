@@ -21,7 +21,9 @@ body {
 #skipB-btn,
 #play-btn,
 #pause-btn,
-#skipF-btn {
+#skipF-btn,
+#volume_icon,
+#volume_off {
   cursor: pointer;
   color: var(--text_1);
   font-size: 40px;
@@ -29,7 +31,9 @@ body {
 #skipB-btn:hover,
 #play-btn:hover,
 #pause-btn:hover,
-#skipF-btn:hover {
+#skipF-btn:hover,
+#volume_icon:hover,
+#volume_off:hover {
   color: var(--text_2);
   transition: 0.2s ease-in-out;
 }

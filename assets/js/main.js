@@ -1,9 +1,3 @@
-const PLAYLIST = {
- 
-}
-
-
-
 const AUDIO = document.querySelector("audio");
 const TRACK = document.getElementById("track");
 const TRACK_TIME = document.getElementById("track-time");
@@ -42,7 +36,6 @@ PAUSE_BTN.addEventListener("click", () => {
   AUDIO.pause();
 });
 
-
 // Timer actuel de la chanson
 AUDIO.addEventListener("timeupdate", function () {
   TRACK.value = this.currentTime;
@@ -56,17 +49,21 @@ TRACK.addEventListener("input", function () {
 });
 
 // Volume
-VOLUME.addEventListener("click", function() {
+VOLUME.addEventListener("click", function () {
   AUDIO.volume = this.value;
-})
+});
 
-VOLUME_ICON.addEventListener("click", function() {
+VOLUME_ICON.addEventListener("click", function () {
   AUDIO.volume = 0;
   VOLUME_ICON.style.display = "none";
   VOLUME_OFF.style.display = "inline-block";
-})
+});
 
-
+VOLUME_OFF.addEventListener("click", function () {
+  AUDIO.volume = 1;
+  VOLUME_OFF.style.display = "none";
+  VOLUME_ICON.style.display = "inline-block";
+});
 
 /**
  * Convertit la durée d'une chanson en minutes et secondes
@@ -84,4 +81,6 @@ function buildDuration(duration) {
 // Ajout des éléments dans le HTML
 TRACK_TIME.textContent = buildDuration(AUDIO.duration);
 
-
+fetch("./assets/playlist.json")
+  .then((res) => res.json())
+  .then((songsData) => (SONG_TITLE.innerHTML = songsData.song1.title));
