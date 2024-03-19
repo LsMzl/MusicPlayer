@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Epique",
+    "artist": "Hans Zimmer",
+    "img": "./assets/img/balloon.jpg",
+    "path": "./assets/music/epic-hollywood-trailer.mp3",
+    "duration": "2:01"
+  },
+  {
+    "id": 2,
+    "title": "Inspiring",
+    "artist": "Jablonsky",
+    "img": "./assets/img/licorice-tea.jpg",
+    "path": "./assets/music/inspiring-cinematic-ambient.mp3",
+    "duration": "3:09"
+  },
+  {
+    "id": 3,
+    "title": "Lifelike",
+    "artist": "Bach",
+    "img": "./assets/img/panda.jpg",
+    "path": "./assets/music/lifelike.mp3",
+    "duration": "2:24"
+  },
+  {
+    "id": 4,
+    "title": "Risk",
+    "artist": "ZZ Top",
+    "img": "./assets/img/sparkling-champagne.jpg",
+    "path": "./assets/music/risk.mp3",
+    "duration": "1:12"
+  }
+]
