@@ -83,11 +83,16 @@ body {
   align-items: center;
 }
 
-.volume {
+.volume_input {
   display: flex;
   align-items: center;
   color: var(--text_1);
 }
 #speaker {
   font-size: 40px;
+}
+
+
+input[type=range] {
+  background: black;
 }

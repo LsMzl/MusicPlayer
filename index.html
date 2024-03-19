@@ -13,10 +13,10 @@
 
   <body>
     <div class="musicPlayer">
-      <audio src="./assets/music/lifelike.mp3"></audio>
+      <audio src="" ></audio>
       <div class="infos">
         <div class="songPicture">
-          <img src="./assets/img/balloon.jpg" alt="Image du titre" />
+          <img src="" alt="Image du titre" id="songPicture"/>
         </div>
 
         <div class="songInfos">
@@ -47,7 +47,7 @@
       </div>
 
       <div class="volume">
-        <div>
+        <div class="volume_input">
           <span class="material-symbols-outlined" id="volume_icon">volume_up</span>
           <span class="material-symbols-outlined" id="volume_off">volume_off</span>
           <input
@@ -55,7 +55,7 @@
             id="volume"
             min="0"
             max="1"
-            value="1"
+            value="0.5"
             step="0.1"
           />
         </div>
